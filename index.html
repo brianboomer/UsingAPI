@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice API</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pageStyle">
+
+    <div class="pageContainer">
+        <div class="containerUnit containerUnit1"><h3>2-Letter Country Code:</h3></div>
+        <div class="containerUnit containerUnit2"><h3>Languages Spoken:</h3></div>
+        <div class="containerUnit containerUnit3"><h3>How to say "Hello":</h3></div>
+        <div class="containerUnit containerUnit4">
+            <form id="queryString">
+                <input id="country-code-entry" type="text" name="inputText" autocomplete="off"><br>
+                <input id="submit-button" type="submit">
+              </form>
+              <h4>Country: <label id="country-result"></label></h4>
+              <h4>Flag:<br></h4>
+              <a><img class="img-fit" id="country-flag"/></a>
+        </div>
+        <div class="containerUnit containerUnit5">
+        </div>
+        <div class="containerUnit containerUnit6"></div>
+    </div>
+
+    <template id="newLanguageTemplate">
+        <div class="language">
+            <label class="language-label">Name</label>            
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
